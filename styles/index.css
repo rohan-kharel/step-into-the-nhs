@@ -1,0 +1,295 @@
+body{
+    animation-name: body-animation;
+    animation-duration: 2s;
+}
+
+@keyframes body-animation{
+    0%{
+        background-color: #FFFFFF;
+    }
+    25%{
+        background-color: #0065B7;
+    }
+    50%{
+        background-color: #FFFFFF;
+    }
+    75%{
+        background-color: #0065B7;
+    }
+    100%{
+        background-color: #FFFFFF;
+    }
+}
+
+.title-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 85px;
+    margin-bottom: 50px;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.title h1{
+    color: #0065B7;
+    font-size: 80px;
+    animation-name: title-h1-animation;
+    animation-duration: 2s;
+}
+
+img[class*="footprint"]{
+    width: 200px;
+    height: auto;
+}
+
+.footprint1{
+    animation-name: footprint1-animation;
+    animation-duration: 2s;
+
+    content: url('/images/foot-left.png');
+    display: relative;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+
+.footprint2{
+    animation-name: footprint2-animation;
+    animation-duration: 2s;
+
+    content: url('/images/foot-right.png');
+    display: relative;
+    position: absolute;
+    bottom: 50px;
+    left: 110px;
+}
+.footprint3{
+    animation-name: footprint3-animation;
+    animation-duration: 2s;
+
+    content: url('/images/foot-left.png');
+    display: relative;
+    position: absolute;
+    bottom: 140px;
+    left: 70px;
+}
+
+.footprint4{
+    animation-name: footprint4-animation;
+    animation-duration: 2s;
+
+    content: url('/images/foot-right.png');
+    display: relative;
+    position: absolute;
+    bottom: 180px;
+    left: 180px;
+}
+.footprint5{
+    animation-name: footprint5-animation;
+    animation-duration: 2s;
+
+    content: url('/images/foot-left.png');
+    display: relative;
+    position: absolute;
+    bottom: 270px;
+    left: 140px;
+}
+
+@keyframes footprint1-animation {
+    0% {
+        opacity: 1;
+        visibility: visible;
+    }
+
+}
+
+@keyframes footprint2-animation {
+    0% {
+        opacity: 0;
+        visibility: hidden;
+    }
+    15%{
+        opacity: 0;
+        visibility: hidden;
+    }
+    25% {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+@keyframes footprint3-animation {
+    0% {
+        opacity: 0;
+        visibility: hidden;
+    }
+    40%{
+        opacity: 0;
+        visibility: hidden;
+    }
+    50% {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+@keyframes footprint4-animation {
+    0% {
+        opacity: 0;
+        visibility: hidden;
+    }
+    65%{
+        opacity: 0;
+        visibility: hidden;
+    }
+    75% {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+@keyframes footprint5-animation {
+    0% {
+        opacity: 0;
+        visibility: hidden;
+    }
+    90%{
+        opacity: 0;
+        visibility: hidden;
+    }
+    100% {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+@keyframes title-h1-animation{
+    0%{
+        color: #0065B7;
+    }
+    25%{
+        color: #FFFFFF;
+    }
+    50%{
+        color: #0065B7;
+    }
+    75%{
+        color: #FFFFFF;
+    }
+    100%{
+        color: #0065B7;
+    }
+    
+}
+
+.subtitle h2{
+    color: #004984;
+    font-size: 40px;
+    margin: 0;
+    font-style: italic;
+    animation-name: subtitle-h2-animation;
+    animation-duration: 2s;
+}
+
+@keyframes subtitle-h2-animation{
+    0%{
+        color: #004984;
+    }
+    25%{
+        color: #FFFFFF;
+    }
+    50%{
+        color: #004984;
+    }
+    75%{
+        color: #FFFFFF;
+    }
+    100%{
+        color: #004984;
+    }
+    
+}
+
+.title img{
+    width: 300px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    content: url('/images/nhs-light.png');
+
+    animation-name: title-img-animation;
+    animation-duration: 2s;
+}
+
+@keyframes title-img-animation{
+    0%{
+        content: url('/images/nhs-light.png');
+    }
+    25%{
+        content: url('/images/nhs-dark.png');
+    }
+    50%{
+        content: url('/images/nhs-light.png');
+    }
+    75%{
+        content: url('/images/nhs-dark.png');
+    }
+    100%{
+        content: url('/images/nhs-light.png');
+    }
+    
+}
+
+nav{
+    animation-name: nav-animation;
+    animation-duration: 2s;
+}
+
+@keyframes nav-animation{
+    0%{
+        background-color: #0065B7;
+    }
+    25%{
+        background-color: #FFFFFF;
+    }
+    50%{
+        background-color: #0065B7;
+    }
+    75%{
+        background-color: #FFFFFF;
+    }
+    100%{
+        background-color: #0065B7;
+    }
+}
+
+nav a{
+    animation-name: nav-a-animation;
+    animation-duration: 2s;
+}
+
+@keyframes nav-a-animation{
+    0%{
+        color: white;
+    }
+    25%{
+        color: #0065B7;
+    }
+    50%{
+        color: white;
+    }
+    75%{
+        color: #0065B7;
+    }
+    100%{
+        color: white;
+    }
+}
